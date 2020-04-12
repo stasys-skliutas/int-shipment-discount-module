@@ -1,0 +1,9 @@
+stages:
+  - build
+
+Build project:
+  image: adoptopenjdk/openjdk11:ubi
+  stage: build
+  script:
+    - chmod +x gradlew
+    - ./gradlew build
