@@ -6,4 +6,4 @@ Build project:
   stage: build
   script:
     - chmod +x gradlew
-    - ./gradlew build
+    - ./gradlew build acceptance

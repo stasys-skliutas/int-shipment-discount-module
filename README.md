@@ -4,6 +4,7 @@
 ### Prerequisites
 + Java 11 JDK installed ([download](https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=openj9))
 ### Build
+#### Make executable
 To build service executable issue
 ```shell script 
 # In *nix like environments
@@ -12,3 +13,10 @@ To build service executable issue
 gradlew.bat clean jar
 ```
 This will result in executable named `shipment-discount-module-1.0-SNAPSHOT.jar` built in project's `/build/libs` directory.
+#### Run acceptance tests
+```shell script 
+# In *nix like environments
+./gradlew clean acceptance
+# In Windows
+gradlew.bat clean acceptance
+```

@@ -1,7 +1,7 @@
 package dev.stasys.shipmentdiscount
 
 class AppSpec extends spock.lang.Specification {
-    def 'test app'() {
+    def 'unit tests work'() {
         given:
             true
         when:
