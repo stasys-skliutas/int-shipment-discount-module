@@ -1,6 +1,6 @@
-package shipmentdiscount.common;
+package shipmentdiscount.common
 
-import groovy.transform.Immutable;
+import groovy.transform.Immutable
 
 @Immutable
 class RunResult {

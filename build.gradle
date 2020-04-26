@@ -26,7 +26,12 @@ sourceSets {
     }
 }
 
-task acceptance(type: Test, dependsOn: jar) {
+task copyAcceptanceResources(type: Copy) {
+    from sourceSets.acceptance.resources.source
+    into project.libsDir
+}
+
+task acceptance(type: Test, dependsOn: [jar, copyAcceptanceResources]) {
     group 'Verification'
     description 'Acceptance tests'
     testClassesDirs = sourceSets.acceptance.output.classesDirs
